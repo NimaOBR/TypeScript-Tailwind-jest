@@ -28,7 +28,6 @@ interface IData {
 }
 
 const Photos = () => {
-  // const transition = { duration: 3, type: 'spring' }
   const [data, setData] = useState<IData[]>([])
   const [loading, setLoading] = useState<boolean>(true)
   const [pageNumber, setPageNumber] = useState<number>(1)
@@ -40,7 +39,6 @@ const Photos = () => {
       `https://uniplato.staging.uniplato.us/api/v1/mock-data?page=${pageNumber}`
     )
   }
-  module.exports = loadData
   useEffect(() => {
     setLoading(false)
     loadData().then((res: any) => setData(res.data.data.data))
