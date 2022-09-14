@@ -1,9 +1,8 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+// const localData = require('./Components/Photos')
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+// describe('Ingredient DAL', () => {
+//   let ingredientId: number
+//   beforeAll(async () => {
+//     await localData()
+//   })
+// })
